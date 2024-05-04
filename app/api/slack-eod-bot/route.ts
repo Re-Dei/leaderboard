@@ -7,7 +7,7 @@ import {
 } from "@/lib/slackbotutils";
 import { createHmac } from "crypto";
 
-export const maxDuration = 300;
+export const maxDuration = 10;
 
 export const POST = async (req: Request) => {
   const timestamp = req.headers.get("X-Slack-Request-Timestamp") || "0";

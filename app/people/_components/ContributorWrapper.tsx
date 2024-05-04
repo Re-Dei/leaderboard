@@ -1,6 +1,8 @@
 import ContributorPage from "./ContributorPage";
 import { getContributors } from "@/lib/api";
 
+export const maxDuration = 10;
+
 export default async function ContributorWrapper({
   searchString,
 }: {

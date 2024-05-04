@@ -3,7 +3,7 @@ import { getContributorBySlug } from "@/lib/api";
 import { getDailyReport } from "@/lib/contributor";
 
 export const revalidate = 900; // revalidates atmost once every 15 mins
-export const maxDuration = 30;
+export const maxDuration = 10;
 
 const org = env.NEXT_PUBLIC_GITHUB_ORG;
 
